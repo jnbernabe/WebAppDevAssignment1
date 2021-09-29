@@ -10,9 +10,18 @@
         <h1 class="display-5 fw-bold text-center">Welcome to the <%= title %> page!</h1>
         
       </div>
-    </div>
-
+      </div>
     </main>
+
+
+    <% if (title == "Home") { %>
+      <% include partials/main_body.ejs %>
+    <% } else if (title == "Contact Me"{ %>
+            <% include partials/form.ejs %>
+   <% } else { %>
+            
+   <% } %>
+
 <%- include partials/bottom_nav.ejs %>
 
 <%- include partials/footer.ejs %>
