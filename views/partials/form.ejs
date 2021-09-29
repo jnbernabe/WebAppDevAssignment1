@@ -1,67 +1,111 @@
-//Form
+<!--Forms-->
+<body class="bg-dark bg-gradient">
 
-<div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">@</span>
-  <input
-    type="text"
-    class="form-control"
-    placeholder="Username"
-    aria-label="Username"
-    aria-describedby="basic-addon1"
-  />
-</div>
+<div class="container-fluid  text-light bg-dark bg-gradient px-5 py-5">
+  <div class="container-xl p-3">
+    <h1><span class="container text-center d-block mx-auto">Thank you for viewing my portfolio</span></h1>
+    <p>
+      Please use the form to submit any questions or suggestions to me and I will respond as soon as possible. <br>
+      If you would like to contact me please use: <br>
+          <h4> <span class="container text-center d-block mx-auto">Phone: (647) 402-1724 <br>
+          Email: JNBernabe@gmail.com <br></span> </h4>
+      
+      <h5><span class="container text-center d-block mx-auto">Thank you.</span></h5>
+<hr class="bg-light" />
+  </p>
+  </div>
 
-<div class="input-group mb-3">
-  <input
-    type="text"
-    class="form-control"
-    placeholder="Recipient's username"
-    aria-label="Recipient's username"
-    aria-describedby="basic-addon2"
-  />
-  <span class="input-group-text" id="basic-addon2">@example.com</span>
-</div>
+  <div class="container pb-5 w-80">
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+        <h4><label for="validationCustom01" class="form-label">First name</label></h4>
+        <input
+          type="text"
+          class="form-control"
+          id="validationCustom01"
+          placeholder="First"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="col-md-4">
+        <h4><label for="validationCustom02" class="form-label">Last name</label></h4>
+        <input
+          type="text"
+          class="form-control"
+          id="validationCustom02"
+          placeholder="Last"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="col-md-4">
+        <h4><label for="validationCustomUsername" class="form-label">Email</label></h4>
+        <div class="input-group has-validation">
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustomUsername"
+            aria-describedby="inputGroupPrepend"
+            placeholder="Youremail@email.com"
+            required
+          />
+          <div class="invalid-feedback">Please give your email address.</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h4><label for="validationCustom03" class="form-label">City</label></h4>
+        <input
+          type="text"
+          class="form-control"
+          id="validationCustom03"
+          placeholder="City"
+          required
+        />
+        <div class="invalid-feedback">Please provide a valid city.</div>
+      </div>
+      <div class="col-md-3">
+        <h4><label for="validationCustom04" class="form-label">Province</label></h4>
+        <select class="form-select" id="validationCustom04">
+          <option selected disabled value="">Choose...</option>
+          <option>ON</option>
+          <option>QC</option>
+          <option>AB</option>
+          <option>YT</option>
+          <option>NF</option>
+          <option>BC</option>
+          <option>MN</option>
+          <option>NS</option>
+          <option>PE</option>
+          <option>SK</option>
+          <option>NU</option>
+          <option>NB</option>
+          <option>NT</option>
+        </select>
+        <div class="invalid-feedback">Please select a valid state.</div>
+      </div>
+      <div class="col-md-3">
+        <h4><label for="validationCustom05" class="form-label">Postal code</label></h4>
+        <input
+          type="text"
+          class="form-control"
+          id="validationCustom05"
 
-<label for="basic-url" class="form-label">Your vanity URL</label>
-<div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon3"
-    >https://example.com/users/</span
-  >
-  <input
-    type="text"
-    class="form-control"
-    id="basic-url"
-    aria-describedby="basic-addon3"
-  />
-</div>
+          placeholder="A1A 1A1"
+        />
+        <div class="invalid-feedback">Please provide a valid Postal code.</div>
 
-<div class="input-group mb-3">
-  <span class="input-group-text">$</span>
-  <input
-    type="text"
-    class="form-control"
-    aria-label="Amount (to the nearest dollar)"
-  />
-  <span class="input-group-text">.00</span>
-</div>
+        
+      </div>
 
-<div class="input-group mb-3">
-  <input
-    type="text"
-    class="form-control"
-    placeholder="Username"
-    aria-label="Username"
-  />
-  <span class="input-group-text">@</span>
-  <input
-    type="text"
-    class="form-control"
-    placeholder="Server"
-    aria-label="Server"
-  />
-</div>
+      <div>
+        <h4><label for="validationCustom05" class="form-label">Message</label></h4>
+        <textarea  class="form-control" placeholder="Leave your message here"></textarea></div>
 
-<div class="input-group">
-  <span class="input-group-text">With textarea</span>
-  <textarea class="form-control" aria-label="With textarea"></textarea>
+      <div class="container text-center d-block mx-auto">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+        <button class="btn btn-primary " type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
 </div>

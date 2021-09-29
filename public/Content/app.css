@@ -1,1 +1,5 @@
 /* Custom CSS goes here */
+body {
+  padding-bottom: 35px;
+  height: 100%;
+}
