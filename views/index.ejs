@@ -16,8 +16,12 @@
 
     <% if (title == "Home") { %>
       <% include partials/main_body.ejs %>
-    <% } else if (title == "Contact Me" ) { %>
-            <% include partials/form.ejs %>
+      <% } else if (title == "About Me" ) { %>
+            <% include partials/about.ejs %>
+    <% } else if (title == "Products" ) { %>
+            <% include partials/products.ejs %>
+    <% } else if (title == "Services" ) { %>
+            <% include partials/services.ejs %>
    <% } else { %>
             
    <% } %>
