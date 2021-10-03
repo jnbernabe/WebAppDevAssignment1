@@ -1,4 +1,17 @@
 /* Custom CSS goes here */
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border;
+}
+
 body {
-  padding-bottom: 35px;
+  padding-top: 59px;
+  padding-bottom: 59px;
+}
+
+html,
+main,
+body {
+  height: 100%;
 }
